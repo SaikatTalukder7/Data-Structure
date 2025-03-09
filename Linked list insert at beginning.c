@@ -4,22 +4,23 @@
 struct node{
      int data;
      struct node *next;
-     };
+};
 
 void linkedTraversal(struct node* ptr){
     while(ptr != NULL)
     {
-     printf("element: %d\n", ptr->data);
-     ptr=ptr->next;
+        printf("element: %d\n", ptr->data);
+        ptr=ptr->next;
     }
 }
-struct node * insertAtBeginning(struct node * head, int data)
+struct node * insertAtFirst(struct node * head, int data)
 {
     struct node * ptr = (struct node *) malloc(sizeof(struct node));
     ptr->next= head;
     ptr->data= data;
     return ptr;
 };
+
 int main()
 {
      struct node * head;
@@ -30,18 +31,28 @@ int main()
      second = (struct node *) malloc(sizeof(struct node));
      third = (struct node *) malloc(sizeof(struct node));
 
-     head->data = 7;
+     printf("Enter data for first node: ");
+     scanf("%d", &head->data);
      head->next = second;
 
-     second->data = 11;
+     printf("Enter data for second node: ");
+     scanf("%d", &second->data);
      second->next = third;
 
-     third->data = 66;
+     printf("Enter data for third node: ");
+     scanf("%d", &third->data);
      third->next = NULL;
 
-     linkedTraversal(head);
-     head=insertAtBeginning(head,56);
+     int new_data;
+     printf("Enter data to insert at the beginning: ");
+     scanf("%d", &new_data);
+
+     printf("\nBefore Insertion:\n");
      linkedTraversal(head);
 
+     head = insertAtFirst(head, new_data);
+
+     printf("\nAfter Insertion:\n");
+     linkedTraversal(head);
      return 0;
 }
