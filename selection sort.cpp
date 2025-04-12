@@ -1,4 +1,4 @@
-// Selection sort algorithm
+// Selection sort 
 #include <bits/stdc++.h>
 #include<iostream>
 using namespace std;
