@@ -1,3 +1,4 @@
+//Sum of n Number
 #include <iostream>
 using namespace std;
 int sum(int n)
