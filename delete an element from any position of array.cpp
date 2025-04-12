@@ -1,3 +1,4 @@
+//delete from any position of array
 #include <iostream>
 using namespace std;
 int main()
