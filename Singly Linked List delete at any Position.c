@@ -1,3 +1,4 @@
+//delete at any Position
 #include<stdio.h>
 #include<stdlib.h>
 
