@@ -1,4 +1,3 @@
-//insert to end of the array
 #include<bits/stdc++.h>
 #include<iostream>
 using namespace std;
