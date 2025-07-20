@@ -1,4 +1,3 @@
-//Doubly Linked list implement
 #include<stdio.h>
 #include<stdlib.h>
 
