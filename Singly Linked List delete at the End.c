@@ -1,4 +1,3 @@
-//delete at the End
 #include<stdio.h>
 #include<stdlib.h>
 
