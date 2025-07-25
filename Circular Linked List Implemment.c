@@ -1,4 +1,3 @@
-//Circular Linked List Implemment
 #include<stdio.h>
 #include<stdlib.h>
 
