@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
-int main() {
+
+int main() 
+{
     int n;
     cout << "Enter the range of array: ";
     cin >> n;
